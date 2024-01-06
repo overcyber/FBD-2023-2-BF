@@ -12,12 +12,11 @@ user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:100.0) Gecko/20100101
 # Loop para baixar os arquivos para cada mês
 for mes in meses:
     # URLs para os arquivos de pagamentos e saques
-    # url_pagamentos = f'https://dadosabertos-download.cgu.gov.br/PortalDaTransparencia/saida/bolsa-familia-pagamentos/2020{mes}_BolsaFamilia_Pagamentos.zip'
+    url_pagamentos = f'https://dadosabertos-download.cgu.gov.br/PortalDaTransparencia/saida/bolsa-familia-pagamentos/2020{mes}_BolsaFamilia_Pagamentos.zip'
     url_saques = f'https://dadosabertos-download.cgu.gov.br/PortalDaTransparencia/saida/bolsa-familia-saques/2020{mes}_BolsaFamilia_Saques.zip'
 
     # Lista de URLs a serem baixadas
-    # urls = [url_pagamentos, url_saques]
-    urls = [url_saques]
+    urls = [url_pagamentos, url_saques]
 
 
     for url in urls:
